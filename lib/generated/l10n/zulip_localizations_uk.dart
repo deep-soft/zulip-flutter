@@ -32,7 +32,7 @@ class ZulipLocalizationsUk extends ZulipLocalizations {
   String get upgradeWelcomeDialogLinkText => 'Ознайомтесь з анонсом у блозі!';
 
   @override
-  String get upgradeWelcomeDialogDismiss => 'Ходімо!';
+  String get upgradeWelcomeDialogDismiss => 'Ходімо';
 
   @override
   String get chooseAccountPageTitle => 'Обрати обліковий запис';
@@ -178,29 +178,30 @@ class ZulipLocalizationsUk extends ZulipLocalizations {
   }
 
   @override
-  String get actionSheetOptionViewReadReceipts => 'View read receipts';
+  String get actionSheetOptionViewReadReceipts =>
+      'Переглянути сповіщення про прочитання';
 
   @override
-  String get actionSheetReadReceipts => 'Read receipts';
+  String get actionSheetReadReceipts => 'Квитанції про прочитання';
 
   @override
   String actionSheetReadReceiptsReadCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'This message has been <z-link>read</z-link> by $count people:',
-      one: 'This message has been <z-link>read</z-link> by $count person:',
+      other: 'Це повідомлення було <z-link>прочитано</z-link> $count людьми:',
+      one: 'Це повідомлення було <z-link>прочитано</z-link> $count особою:',
     );
     return '$_temp0';
   }
 
   @override
   String get actionSheetReadReceiptsZeroReadCount =>
-      'No one has read this message yet.';
+      'Ніхто ще не прочитав цього повідомлення.';
 
   @override
   String get actionSheetReadReceiptsErrorReadCount =>
-      'Failed to load read receipts.';
+      'Не вдалося завантажити сповіщення про прочитання.';
 
   @override
   String get actionSheetOptionCopyMessageText => 'Копіювати текст повідомлення';
@@ -739,20 +740,20 @@ class ZulipLocalizationsUk extends ZulipLocalizations {
   String get yesterday => 'Учора';
 
   @override
-  String get userActiveNow => 'Active now';
+  String get userActiveNow => 'Активний зараз';
 
   @override
-  String get userIdle => 'Idle';
+  String get userIdle => 'Холостий хід';
 
   @override
   String userActiveMinutesAgo(int minutes) {
     String _temp0 = intl.Intl.pluralLogic(
       minutes,
       locale: localeName,
-      other: '$minutes minutes',
-      one: '1 minute',
+      other: '$minutes хвилин',
+      one: '1 хвилина',
     );
-    return 'Active $_temp0 ago';
+    return 'Активний $_temp0 тому';
   }
 
   @override
@@ -760,33 +761,33 @@ class ZulipLocalizationsUk extends ZulipLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       hours,
       locale: localeName,
-      other: '$hours hours',
-      one: '1 hour',
+      other: '$hours години',
+      one: '1 година',
     );
-    return 'Active $_temp0 ago';
+    return 'Активний $_temp0 тому';
   }
 
   @override
-  String get userActiveYesterday => 'Active yesterday';
+  String get userActiveYesterday => 'Активний учора';
 
   @override
   String userActiveDaysAgo(int days) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$days days',
-      one: '1 day',
+      other: '$days дні',
+      one: '1 день',
     );
-    return 'Active $_temp0 ago';
+    return 'Активний $_temp0 тому';
   }
 
   @override
   String userActiveDate(String date) {
-    return 'Active $date';
+    return 'Активний $date';
   }
 
   @override
-  String get userNotActiveInYear => 'Not active in the last year';
+  String get userNotActiveInYear => 'Неактивний протягом останнього року';
 
   @override
   String get invisibleMode => 'Невидимий режим';
@@ -905,7 +906,7 @@ class ZulipLocalizationsUk extends ZulipLocalizations {
   String get channelsEmptyPlaceholder => 'Ви ще не підписані на жодний канал.';
 
   @override
-  String get sharePageTitle => 'Share';
+  String get sharePageTitle => 'Поділитися';
 
   @override
   String get mainMenuMyProfile => 'Мій профіль';
@@ -1096,11 +1097,11 @@ class ZulipLocalizationsUk extends ZulipLocalizations {
   String get errorReactionRemovingFailedTitle => 'Не вдалося видалити реакцію';
 
   @override
-  String get errorSharingTitle => 'Failed to share content';
+  String get errorSharingTitle => 'Не вдалося поділитися контентом';
 
   @override
   String get errorSharingAccountNotLoggedIn =>
-      'There is no account logged in. Please log in to an account and try again.';
+      'Немає облікового запису, в який ви ввійшли. Будь ласка, увійдіть в обліковий запис і спробуйте ще раз..';
 
   @override
   String get emojiReactionsMore => 'більше';
